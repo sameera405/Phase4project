@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  customersupportloggerapplication:
+    image: ${DOCKER_REGISTRY-}customersupportloggerapplication
+    build:
+      context: .\CustomerSupportLoggerApplication
+      dockerfile: Dockerfile
